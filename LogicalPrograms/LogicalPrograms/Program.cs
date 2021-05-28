@@ -9,6 +9,7 @@ namespace LogicalPrograms
             Console.WriteLine("Welcome to Logical Programs");
             Console.WriteLine("1.Fibonacci Series");
             Console.WriteLine("2.Perfect Number");
+            Console.WriteLine("3.Prime Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -19,7 +20,7 @@ namespace LogicalPrograms
                     fibonacciSeries.Fibbo();
                     break;
                 case 2:
-                    //Perfect
+                    
                     Perfect perfect = new Perfect();
                     Console.WriteLine("Enter number to check is perfect or not:");
                     int inputPerfect = Convert.ToInt32(Console.ReadLine());
@@ -32,6 +33,13 @@ namespace LogicalPrograms
                     {
                         Console.WriteLine("It is not a Perfect Number");
                     }
+                    break;
+                case 3:
+                    
+                    Prime prime = new Prime();
+                    Console.WriteLine("Enter Number : ");
+                    int inputPrime = Convert.ToInt32(Console.ReadLine());
+                    prime.PrimeNumber(inputPrime);
                     break;
 
 
