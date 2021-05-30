@@ -49,6 +49,11 @@ namespace LogicalPrograms
                     StopWatch stopwatch = new StopWatch();
                     stopwatch.Stopwatch();
                     break;
+                default:
+                    {
+                        Console.WriteLine("Enter Right choice");
+                        break;
+                    }
 
             }
         }
